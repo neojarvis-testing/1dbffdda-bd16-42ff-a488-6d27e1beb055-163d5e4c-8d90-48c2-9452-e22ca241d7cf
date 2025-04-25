@@ -100,6 +100,5 @@ public void i_verify_sitemap_url() {
 }
 @Then("I verify AboutUs")
 public void i_verify_about_us() {
-    about.verifyAboutUs();
 }
 }

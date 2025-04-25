@@ -3,14 +3,14 @@ package uistore;
 import org.openqa.selenium.By;
 
 public class SwarovskiAboutUsPageLocators {
-    public static By clickOnAboutSwarovski=By.xpath("(//span[text()='About Swarovski'])[8]");
-    public static By clickOnSustainability=By.xpath("(//span[text()='Sustainability'])[8]");
-    public static By clickOnJobsAndCareer=By.xpath("(//span[text()='Jobs & Career'])[8]");
-    public static By clickOnAlumniCommunity=By.xpath("(//span[text()='Alumni Community'])[1]");
-    public static By clickOnCorporategifts=By.xpath("(//span[text()='Corporate Gifts'])[8]");
-    public static By clickOnForProfessional=By.xpath("(//span[text()='For Professionals'])[8]");
-    public static By clickOnSitemap=By.xpath("(//span[text()='Sitemap'])[1]");
-    public static By clickOnkristallwelten=By.xpath("(//span[text()='Kristallwelten'])[1]");
+    public static By clickOnAboutSwarovski=By.xpath("(//a[@href='/en-US/s-brand/'])[2]");
+    public static By clickOnSustainability=By.xpath("(//a[@href='/en-US/s-sustainability/'])[2]");
+    public static By clickOnJobsAndCareer=By.xpath("(//a[@href='/en-US/s-careers/'])[2]");
+    public static By clickOnAlumniCommunity=By.xpath("//a[@href='https://alumni.swarovski.com/alumni/anon/landing-page?_ics=1745572545554&irclickid=~4VOSXNFHxvCBCFxCABqyofgf~c569chdjipsujkgea71WNKFAuqh']");
+    public static By clickOnCorporategifts=By.xpath("(//a[@href='/en-US/s-corporate-gifts/'])[3]");
+    public static By clickOnForProfessional=By.xpath("(//a[@href='/en-US/professionals/'])[2]");
+    public static By clickOnSitemap=By.xpath("(//a[@href='/en-US/s-html-sitemap/'])[1]");
+    public static By clickOnkristallwelten=By.xpath("(//a[@href='https://kristallwelten.swarovski.com/?_ics=1745572545554&irclickid=~4VOSXNFHxvCBCFxCABqyofgf~c569chdjipsujkgea71WNKFAuqh'])");
     public static By clickOnAboutUs=By.xpath("(//span[text()='About Us'])[1]");
     public static By clickOnTermsOfUse=By.xpath("(//span[text()='Terms Of Use'])[1]");
     public static By clickOnTermsAndConditions=By.xpath("(//span[text()='Terms & Conditions'])[1]");

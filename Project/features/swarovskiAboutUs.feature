@@ -1,6 +1,6 @@
 @one
 Feature: funcitionality on AboutUs
-	Scenario:  funcitionality on AboutUs
+	Scenario: funcitionality on AboutUs
 		Given I scroll To About swarovski
         When I click On About Swarovski
         And I verify AboutSwarovski Title

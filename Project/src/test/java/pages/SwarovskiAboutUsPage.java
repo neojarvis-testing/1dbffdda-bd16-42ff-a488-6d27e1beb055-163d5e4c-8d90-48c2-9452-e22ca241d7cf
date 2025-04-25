@@ -1,5 +1,7 @@
 package pages;
 
+import org.openqa.selenium.JavascriptExecutor;
+
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
@@ -12,6 +14,7 @@ import utils.Screenshot;
 import utils.WebDriverHelper;
 
 public class SwarovskiAboutUsPage {
+    JavascriptExecutor js= (JavascriptExecutor)Base.driver;
     WebDriverHelper helper;
     ExtentTest test;
     public SwarovskiAboutUsPage(ExtentTest test){
@@ -28,7 +31,8 @@ public class SwarovskiAboutUsPage {
     public void scrollToAboutswarovski()
     {
         try {
-            helper.scrolltoElement(SwarovskiAboutUsPageLocators.clickOnAboutSwarovski);
+            js.executeScript("window.scrollBy(0,7500)", "");
+            helper.clickOnElement(SwarovskiAboutUsPageLocators.clickOnAboutSwarovski);
             test.log(Status.PASS,"scroll to About Swarovski");
             LoggerHandler.logInfo("scroll to About Swarovski");
         } catch (Exception e) {
