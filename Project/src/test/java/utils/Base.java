@@ -17,31 +17,30 @@ import org.openqa.selenium.support.events.EventFiringDecorator;
 import org.openqa.selenium.support.events.WebDriverListener;
 
 public class Base {
-
+    
     public static WebDriver driver;
     public static FileInputStream file;
     public static Properties prop;
 
-    public void loadProperties() throws IOException {
-        String propertiesPath = System.getProperty("user.dir") + "/config/browser.properties";
+    public static void loadProperties() throws IOException {
+        String propertiesPath = System.getProperty("user.dir") + "/config/config.properties";
         try {
             file = new FileInputStream(propertiesPath);
             prop = new Properties();
             prop.load(file);
 
         } catch (FileNotFoundException e) {
-            e.printStackTrace();
+            LoggerHandler.logError(e.getMessage());
 
         }
     }
 
-    public void openBrowser() {
+    public static void openBrowser() {
 
         try {
             loadProperties();
         } catch (IOException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
+            LoggerHandler.logError(e.getMessage());
         }
         String executionType = prop.getProperty("executiontype");
         String browserName = prop.getProperty("browser");
@@ -53,7 +52,7 @@ public class Base {
                 driver = new RemoteWebDriver(gridUrl, new ChromeOptions());
             } catch (MalformedURLException e) {
 
-                e.printStackTrace();
+                LoggerHandler.logError(e.getMessage());
             }
 
         } else if ("local".equalsIgnoreCase(executionType)) {
@@ -78,14 +77,11 @@ public class Base {
             System.err.println("Invalid execution type: " + executionType);
         }
 
-        if (driver != null)
-
-        {
+        if (driver != null){
             driver.manage().window().maximize();
             driver.get(prop.getProperty("url"));
             driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(5));
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-
         }
         // Dont remove the listener Object
 
