@@ -22,13 +22,13 @@ public SwarovskiJwelleriesPage(ExtentTest test){
 * d.Parameters: None
 * e.Return Type: void
 */
-private void hoverOverJwelleries(){
+public void hoverOverJwelleries(){
     try {
         Thread.sleep(1000);
         helper.scrollByPixel(0, 100);
         helper.waitForElementToBeVisible(SwarovskiJwelleriesLocators.hoverOverJwelleries, 10);
         helper.hoverElement(SwarovskiJwelleriesLocators.hoverOverJwelleries);
-        test.log(Status.INFO, "Hover Over Jwelleries");
+        test.log(Status.PASS, "Hover Over Jwelleries");
         LoggerHandler.logInfo("Hover Over Jwelleries");
     } catch (Exception e) {
         test.log(Status.FAIL, "Hover Over Jwelleries");
@@ -43,12 +43,12 @@ private void hoverOverJwelleries(){
 * d.Parameters: None
 * e.Return Type: void
 */
-private void clickOnPendants(){
+public void clickOnPendants(){
     try {
         helper.waitForElementToBeVisible(SwarovskiJwelleriesLocators.clickOnPendants, 10);
         helper.waitForElementToBeClickable(SwarovskiJwelleriesLocators.clickOnPendants, 10);
         helper.clickOnElement(SwarovskiJwelleriesLocators.clickOnPendants);
-        test.log(Status.INFO, "Click on Pendants");
+        test.log(Status.PASS, "Click on Pendants");
         LoggerHandler.logInfo("Click on Pendants");
     } catch (Exception e) {
         test.log(Status.FAIL, "Click on Pendants");
@@ -63,7 +63,7 @@ private void clickOnPendants(){
 * d.Parameters: None
 * e.Return Type: void
 */
-private void verifyURLforPendants(){
+public void verifyURLforPendants(){
     String url= Base.driver.getCurrentUrl();
     AssertionUtility.verifyCondition(test, url, "Pendants");
 }
@@ -75,14 +75,14 @@ private void verifyURLforPendants(){
 * d.Parameters: None
 * e.Return Type: void
 */
-private void clickOnMeterial(){
+public void clickOnMeterial(){
     try {
         Thread.sleep(1000);
         helper.scrollByPixel(0, 200);
         helper.waitForElementToBeVisible(SwarovskiJwelleriesLocators.clickOnMeterial, 10);
         helper.waitForElementToBeClickable(SwarovskiJwelleriesLocators.clickOnMeterial, 10);
         helper.clickOnElement(SwarovskiJwelleriesLocators.clickOnMeterial);
-        test.log(Status.INFO, "Click on Meterial");
+        test.log(Status.PASS, "Click on Meterial");
         LoggerHandler.logInfo("Click on Meterial");
     } catch (Exception e) {
         test.log(Status.FAIL, "Click on Meterial");
@@ -97,12 +97,12 @@ private void clickOnMeterial(){
 * d.Parameters: None
 * e.Return Type: void
 */
-private void clickOnCrystal(){
+public void clickOnCrystal(){
     try {
         helper.waitForElementToBeVisible(SwarovskiJwelleriesLocators.clickOnCrystal, 10);
         helper.waitForElementToBeClickable(SwarovskiJwelleriesLocators.clickOnCrystal, 10);
         helper.clickOnElement(SwarovskiJwelleriesLocators.clickOnCrystal);
-        test.log(Status.INFO, "Click on Crystal");
+        test.log(Status.PASS, "Click on Crystal");
         LoggerHandler.logInfo("Click on Crystal");
     } catch (Exception e) {
         test.log(Status.FAIL, "Click on Crystal");
@@ -117,21 +117,21 @@ private void clickOnCrystal(){
 * d.Parameters: None
 * e.Return Type: void
 */
-private void clickOnShowProduct(){
+public void clickOnShowProduct(){
     try {
         helper.waitForElementToBeVisible(SwarovskiJwelleriesLocators.clickOnShowProduct, 10);
         helper.waitForElementToBeClickable(SwarovskiJwelleriesLocators.clickOnShowProduct, 10);
         helper.clickOnElement(SwarovskiJwelleriesLocators.clickOnShowProduct);
-        test.log(Status.INFO, "Click on ShowProduct");
+        test.log(Status.PASS, "Click on ShowProduct");
         LoggerHandler.logInfo("Click on ShowProduct");
     } catch (Exception e) {
         test.log(Status.FAIL, "Click on ShowProduct");
         LoggerHandler.logError("Click on ShowProduct");
     }
 }
-private void verifyURLforCrystal(){
+public void verifyURLforCrystal(){
     String url= Base.driver.getCurrentUrl();
-    AssertionUtility.verifyCondition(test, url, "Crystal");
+    AssertionUtility.verifyCondition(test, url, "Pendants");
 }
 
 /*
@@ -141,12 +141,12 @@ private void verifyURLforCrystal(){
 * d.Parameters: None
 * e.Return Type: void
 */
-private void clickOnColor(){
+public void clickOnColor(){
     try {
         helper.waitForElementToBeVisible(SwarovskiJwelleriesLocators.clickOnColor, 10);
         helper.waitForElementToBeClickable(SwarovskiJwelleriesLocators.clickOnColor, 10);
         helper.clickOnElement(SwarovskiJwelleriesLocators.clickOnColor);
-        test.log(Status.INFO, "Click on Color");
+        test.log(Status.PASS, "Click on Color");
         LoggerHandler.logInfo("Click on Color");
     } catch (Exception e) {
         test.log(Status.FAIL, "Click on Color");
@@ -161,12 +161,12 @@ private void clickOnColor(){
 * d.Parameters: None
 * e.Return Type: void
 */
-private void clickOnWhite(){
+public void clickOnWhite(){
     try {
         helper.waitForElementToBeVisible(SwarovskiJwelleriesLocators.clickOnWhite, 10);
         helper.waitForElementToBeClickable(SwarovskiJwelleriesLocators.clickOnWhite, 10);
         helper.clickOnElement(SwarovskiJwelleriesLocators.clickOnWhite);
-        test.log(Status.INFO, "Click on White");
+        test.log(Status.PASS, "Click on White");
         LoggerHandler.logInfo("Click on White");
     } catch (Exception e) {
         test.log(Status.FAIL, "Click on White");
@@ -181,17 +181,12 @@ private void clickOnWhite(){
 * d.Parameters: None
 * e.Return Type: void
 */
-private void clickOnShowProduct49(){
+public void clickOnShowProduct49(){
     try {
-        Base.driver.navigate().refresh();
-        try {
-            helper.clickOnElement(SwarovskiJwelleriesLocators.clickOnCrossButton);
-        } catch (Exception e) {
-        }
         helper.waitForElementToBeVisible(SwarovskiJwelleriesLocators.clickOnShowProduct49, 10);
         helper.waitForElementToBeClickable(SwarovskiJwelleriesLocators.clickOnShowProduct49, 10);
         helper.clickOnElement(SwarovskiJwelleriesLocators.clickOnShowProduct49);
-        test.log(Status.INFO, "Click on ShowProduct based on color");
+        test.log(Status.PASS, "Click on ShowProduct based on color");
         LoggerHandler.logInfo("Click on ShowProduct based on color");
     } catch (Exception e) {
         test.log(Status.FAIL, "Click on ShowProduct based on color");
@@ -199,9 +194,9 @@ private void clickOnShowProduct49(){
     }
 }
 
-private void verifyURLforColor(){
+public void verifyURLforColor(){
     String url= Base.driver.getCurrentUrl();
-    AssertionUtility.verifyCondition(test, url, "Color");
+    AssertionUtility.verifyCondition(test, url, "color");
 }
 
 /*
@@ -213,15 +208,11 @@ private void verifyURLforColor(){
 */
 public void clickOnFirstProduct(){
     try {
-        try {
-            helper.clickOnElement(SwarovskiJwelleriesLocators.clickOnCrossButton);
-        } catch (Exception e) {
-        }
         helper.scrollByPixel(0, 200);
         helper.waitForElementToBeVisible(SwarovskiJwelleriesLocators.clickOnPendentFirstProduct, 10);
         helper.waitForElementToBeClickable(SwarovskiJwelleriesLocators.clickOnPendentFirstProduct, 10);
         helper.clickOnElement(SwarovskiJwelleriesLocators.clickOnPendentFirstProduct);
-        test.log(Status.INFO, "Click on FirstProduct");
+        test.log(Status.PASS, "Click on FirstProduct");
         LoggerHandler.logInfo("Click on FirstProduct");
     } catch (Exception e) {
         test.log(Status.FAIL, "Click on FirstProduct");
@@ -246,7 +237,7 @@ public void clickOnAddToBag(){
         helper.waitForElementToBeVisible(SwarovskiJwelleriesLocators.clickOnAddToBag, 10);
         helper.waitForElementToBeClickable(SwarovskiJwelleriesLocators.clickOnAddToBag, 10);
         helper.clickOnElement(SwarovskiJwelleriesLocators.clickOnAddToBag);
-        test.log(Status.INFO, "Click on AddToBag");
+        test.log(Status.PASS, "Click on AddToBag");
         LoggerHandler.logInfo("Click on AddToBag");
     } catch (Exception e) {
         test.log(Status.FAIL, "Click on AddToBag");
@@ -265,29 +256,6 @@ public void verifyFindInStore(){
     helper.waitForElementToBeVisible(SwarovskiJwelleriesLocators.verifyFindInStore, 10);
     String textFindStore= helper.getText(SwarovskiJwelleriesLocators.verifyFindInStore);
     AssertionUtility.verifyText(test, textFindStore, "Find in store");
-}
-
-
-/*
-* a.Method Name: testPendants.
-* b.Author Name: Md Safiur Rahaman
-* c.Description: This method  is used to cluster all the methods in this class.
-* d.Parameters: None
-* e.Return Type: void
-*/
-public void testPendants(){
-    hoverOverJwelleries();
-    clickOnPendants();
-    verifyURLforPendants();
-    clickOnMeterial();
-    clickOnCrystal();
-    clickOnShowProduct();
-    verifyURLforCrystal();
-    clickOnColor();
-    clickOnWhite();
-    clickOnShowProduct49();
-    verifyURLforColor();
-
 }
 
 

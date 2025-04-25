@@ -23,7 +23,7 @@ public SwarovskiWatchesPage(ExtentTest test){
 * d.Parameters: None
 * e.Return Type: void
 */
-private void hoverOverWatches(){
+public void hoverOverWatches(){
     try {
         helper.scrollByPixel(0, 100);
         helper.waitForElementToBeVisible(SwarovskiWatchesLocators.hoverOverWatches, 10);
@@ -42,7 +42,7 @@ private void hoverOverWatches(){
 * d.Parameters: None
 * e.Return Type: void
 */
-private void clickOnImber(){
+public void clickOnImber(){
     try {
         helper.waitForElementToBeVisible(SwarovskiWatchesLocators.clickOnImber, 10);
         helper.waitForElementToBeClickable(SwarovskiWatchesLocators.clickOnImber, 10);
@@ -54,7 +54,7 @@ private void clickOnImber(){
         LoggerHandler.logError("Can not Click on Imber");
     }
 }
-private void verifyURLforImber(){
+public void verifyURLforImber(){
     String url= Base.driver.getCurrentUrl();
     AssertionUtility.verifyCondition(test, url, "imber");
 }
@@ -65,7 +65,7 @@ private void verifyURLforImber(){
 * d.Parameters: None
 * e.Return Type: void
 */
-private void clickOnCategories(){
+public void clickOnCategories(){
     try {
         Thread.sleep(1000);
         helper.scrollByPixel(0, 200);
@@ -86,7 +86,7 @@ private void clickOnCategories(){
 * d.Parameters: None
 * e.Return Type: void
 */
-private void clickOnClose(){
+public void clickOnClose(){
     try {
         Thread.sleep(1000);
         helper.waitForElementToBeVisible(SwarovskiWatchesLocators.clickOnClose, 10);
@@ -119,7 +119,7 @@ public void clickOnWishList(){
         LoggerHandler.logError("Can not Click on WishList");
     }
 }
-private void verifyResult(){
+public void verifyResult(){
     String text=Base.driver.findElement(SwarovskiWatchesLocators.verifyResult).getText();
     AssertionUtility.verifyCondition(test, text, "Results");
 }
@@ -133,10 +133,9 @@ private void verifyResult(){
 */
 public void clickOnFirstWatchProduct(){
     try {
-        helper.scrollByPixel(0, 200);
+        
         helper.waitForElementToBeVisible(SwarovskiWatchesLocators.clickOnFirstWatchProduct, 10);
-        helper.hoverElement(SwarovskiWatchesLocators.clickOnFirstWatchProduct);
-        helper.mouseClick(SwarovskiWatchesLocators.clickOnFirstWatchProduct);
+        helper.clickOnElement(SwarovskiWatchesLocators.clickOnFirstWatchProduct);
         test.log(Status.PASS, "Click on FirstWatchProduct");
         LoggerHandler.logInfo("Click on FirstWatchProduct");
     } catch (Exception e) {
@@ -156,7 +155,7 @@ public void verifyURLforImberWatch(){
 * e.Return Type: void
 */
 public void clickOnAddToBag(){
-    helper.scrollByPixel(0, 150);
+    helper.scrollByPixel(0, 200);
     try {
         helper.waitForElementToBeVisible(SwarovskiWatchesLocators.clickOnAddToBag, 10);
         helper.waitForElementToBeClickable(SwarovskiWatchesLocators.clickOnAddToBag, 10);
