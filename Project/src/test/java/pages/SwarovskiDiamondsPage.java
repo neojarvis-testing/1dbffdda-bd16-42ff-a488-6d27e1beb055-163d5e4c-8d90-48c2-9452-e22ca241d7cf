@@ -238,5 +238,25 @@ public class SwarovskiDiamondsPage {
         Reporter.logScreenshottoReport("Dianond Rings",test,"screenshot attached to report");
     }
 
+
+     /*
+     * Method Name: testSwarovskiDiamondPage
+     * Author name: Kartik Bameta
+     * Description: Calls all the methods defined above and this method will be called inside runner page for execution.
+     * Parameters: none
+     * Return type: void
+     */
+    public void testSwarovskiDiamondPage(){
+        hoverOnSwarovskiCreatedDiamonds();
+        clickOnEternity();
+        verifyURLText();
+        clickOnCategories();
+        clickOnRings();
+        clickOnShowProducts();
+        clickOnMaterial();
+        clickOnSterlingSilver();
+        clickOnShowProductsButton();
+    }
+
 }
 

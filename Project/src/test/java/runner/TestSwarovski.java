@@ -6,7 +6,7 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "feature",glue = "stepdefinition",tags = "@DiamondFeature")
+@CucumberOptions(features = "features",glue = "stepdefinition")
 public class TestSwarovski {
 
 }
