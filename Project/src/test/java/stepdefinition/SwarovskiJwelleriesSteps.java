@@ -34,8 +34,8 @@ public void i_click_on_meterial() {
 public void i_click_on_crystal() {
    swarovskiJwelleriesPage.clickOnCrystal();
 }
-@When("I click on ShowProduct.")
-public void i_click_on_show_product() {
+@When("I click on ShowProduct1.")
+public void i_click_on_show_product1() {
     swarovskiJwelleriesPage.clickOnShowProduct();
 }
 @When("I verify URL for Crystal.")

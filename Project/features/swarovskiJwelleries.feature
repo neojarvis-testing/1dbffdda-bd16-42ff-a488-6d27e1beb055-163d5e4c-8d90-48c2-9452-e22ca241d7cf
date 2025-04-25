@@ -6,7 +6,7 @@ Feature:
         And I verify URL for Pendants.
         And I click on Meterial.
         And I click on Crystal.
-        And I click on ShowProduct.
+        And I click on ShowProduct1.
         And I verify URL for Crystal.
         And I click on color.
         And I click on White.
