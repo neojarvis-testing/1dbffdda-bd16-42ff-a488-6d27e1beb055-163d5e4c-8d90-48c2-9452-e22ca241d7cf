@@ -47,8 +47,13 @@ public void i_click_on_sterling_silver() {
 public void i_click_on_show_all_products() {
     diamondsPage.clickOnShowProductsButton();
 }
-@Then("I captured a screenshot.")
-public void i_captured_a_screenshot() {
+@When("I click on first Ring.")
+public void i_click_on_first_ring() {
+    diamondsPage.clickOnFirstProductRing();
+}
+@Then("I verify text and captured a screenshot.")
+public void i_verify_text_and_captured_a_screenshot() {
+    diamondsPage.verifySizeKeyword();
     diamondsPage.takeASanpshot();
 }
 }

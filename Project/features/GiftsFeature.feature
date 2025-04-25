@@ -11,4 +11,5 @@ Feature: Testing Swarovski Gifts Automation.
         And I click on Materials.
         And I click on stainless steel.
         And  I click on show all.
-        Then I took a snapshot.
+        And I click on first watch.
+        Then I verify the text and took a snapshot.

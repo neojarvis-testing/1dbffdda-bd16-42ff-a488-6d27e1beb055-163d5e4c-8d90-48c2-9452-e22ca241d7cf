@@ -47,8 +47,14 @@ public void i_click_on_stainless_steel() {
 public void i_click_on_show_all() {
     giftsPage.clickOnShowAll();
 }
-@Then("I took a snapshot.")
+@When("I click on first watch.")
+public void i_click_on_frist_watch() {
+    giftsPage.clickOnFirstProduct();
+}
+
+@Then("I verify the text and took a snapshot.")
 public void i_took_a_snapshot() {
+    giftsPage.verify();
     giftsPage.takeSnap();
 }
 }

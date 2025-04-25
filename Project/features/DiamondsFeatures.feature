@@ -10,4 +10,5 @@ Feature: Testing Swarovski Diamonds Automation.
         And I click on Material.
         And I click on Sterling Silver.
         And I click on show all products.
-        Then I captured a screenshot.
+        And I click on first Ring.
+        Then I verify text and captured a screenshot.
