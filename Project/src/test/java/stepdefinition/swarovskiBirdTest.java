@@ -3,10 +3,9 @@ package stepdefinition;
 import com.aventstack.extentreports.ExtentTest;
 
 import io.cucumber.java.en.Then;
+
 import io.cucumber.java.en.When;
 import pages.SwarovskiBirdPage;
-
-
 public class swarovskiBirdTest {
     public static ExtentTest test=Hooks.reports.createTest("Sunglasses");
     SwarovskiBirdPage swarovskiBirdPage=new SwarovskiBirdPage(test);
