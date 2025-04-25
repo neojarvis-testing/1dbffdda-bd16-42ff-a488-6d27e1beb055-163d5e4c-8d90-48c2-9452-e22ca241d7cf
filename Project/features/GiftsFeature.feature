@@ -1,4 +1,5 @@
-Feature: Testing Swarovski Automation.
+@GiftFetaure
+Feature: Testing Swarovski Gifts Automation.
     Scenario: I want to show all Gifts.
         Given I hover on Gifts.
         When I click on wedding gifts.
