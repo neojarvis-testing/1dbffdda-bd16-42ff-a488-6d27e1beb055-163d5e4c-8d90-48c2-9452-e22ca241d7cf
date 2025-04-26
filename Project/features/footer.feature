@@ -1,6 +1,6 @@
 @Two
 Feature: funcitionality on Footer
-	Scenario:  funcitionality on Footer
+	Scenario:  verifying elements in footer
     Given I scroll To Footer
     When I click On Terms Of Use
     And I verify Terms Of Use Title

@@ -9,53 +9,56 @@ import pages.EarringsHomePage;
 
 public class EarringsPage {
     ExtentTest test = Hooks.reports.createTest("Earings");
-    EarringsHomePage ehp = new EarringsHomePage(test);
+    EarringsHomePage earringsHomePage = new EarringsHomePage(test);
 @Given("I verify the Logo.")
 public void i_verify_the_logo() {
-   ehp.verifyLogo();
+   earringsHomePage.verifyLogo();
 }
 @When("I click on serachIcon.")
 public void i_click_on_serach_icon() {
-   ehp.clickOnsearchIcon();
+   earringsHomePage.clickOnsearchIcon();
 }
 @When("I click on SearchBar.")
 public void i_click_on_search_bar() {
-    ehp.clickOnsearchBar();
+    earringsHomePage.clickOnsearchBar();
 }
-@When("I send data to Search Bar.")
-public void i_send_data_to_search_bar() {
-   ehp.sendData();
+
+@When("I send data to Search Bar as {string}.")
+public void i_send_data_to_search_bar_as(String string) {
+   earringsHomePage.sendData(string);
 }
+
+
 @When("I click on Enter.")
 public void i_click_on_enter() {
-   ehp.enterAction();
+   earringsHomePage.enterAction();
 }
 @When("I  click on Material.")
 public void i_click_on_material() {
-  ehp.clickOnMaterial();
+  earringsHomePage.clickOnMaterial();
 }
 @When("I  click on Gemstone.")
 public void i_click_on_gemstone() {
-  ehp.clickOnGemstone();
+  earringsHomePage.clickOnGemstone();
 }
 @When("I click on Zircoina.")
 public void i_click_on_zircoina() {
-    ehp.clickOnZircoina();
+    earringsHomePage.clickOnZircoina();
 }
 @When("I click on ShowProduct.")
 public void i_click_on_show_product() {
-   ehp.clickOnShowProduct();
+   earringsHomePage.clickOnShowProduct();
 }
 @When("I click on FirstProduct.")
 public void i_click_on_first_product() {
-   ehp.clickOnFirstProduct();
+   earringsHomePage.clickOnFirstProduct();
 }
 @When("I click on BookAppointment.")
 public void i_click_on_book_appointment() {
-   ehp.clickOnBookAppointment();
+   earringsHomePage.clickOnBookAppointment();
 }
 @Then("I verify Description.")
 public void i_verify_description() {
-   ehp.verifyDescription();
+   earringsHomePage.verifyDescription();
 }
 }

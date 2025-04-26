@@ -79,10 +79,10 @@ public class EarringsHomePage {
      * D. Return type : void
      * E. Parameter : Null
      */
-    public void sendData() {
+    public void sendData(String data) {
         try {
             helper.waitForElementToBeVisible(EarringsHomePageLocator.clickOnsearchBar, 5);
-            helper.sendData(EarringsHomePageLocator.clickOnsearchBar, "Earrings");
+            helper.sendData(EarringsHomePageLocator.clickOnsearchBar, data);
             test.log(Status.INFO, "Senddata to searchBar as Earrings");
             LoggerHandler.logInfo("Sentdata to searchBar as Earrings");
         } catch (Exception e) {
