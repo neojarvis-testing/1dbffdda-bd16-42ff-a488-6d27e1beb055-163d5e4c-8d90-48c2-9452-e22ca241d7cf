@@ -1,10 +1,10 @@
 @Earrings
 Feature: Earrings Home Page Functinallity 
-    Scenario: Earrings Home Page Verification
+    Scenario Outline: Earrings Home Page Verification
         Given I verify the Logo.
         When I click on serachIcon.
         And I click on SearchBar.
-        And I send data to Search Bar.
+        And I send data to Search Bar as "<Data>".
         And I click on Enter.
         And I  click on Material.
         And I  click on Gemstone.
@@ -13,3 +13,7 @@ Feature: Earrings Home Page Functinallity
         And I click on FirstProduct.
         And I click on BookAppointment.
         Then I verify Description.
+    Examples:
+    |Data    |
+    |Earrings|
+
