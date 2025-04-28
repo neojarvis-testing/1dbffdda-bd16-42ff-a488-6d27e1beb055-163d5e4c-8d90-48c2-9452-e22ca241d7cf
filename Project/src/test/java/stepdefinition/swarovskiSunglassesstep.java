@@ -4,7 +4,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pages.SwarovskiSunglassesPage;
 public class swarovskiSunglassesstep {
-    public static ExtentTest test=Hooks.reports.createTest("Sunglasses");
+    public static ExtentTest test=Hooks.reports.createTest("Sunglasses Page");
     SwarovskiSunglassesPage  swarovskiSunglassesPage=new SwarovskiSunglassesPage(test);
     @When("I hover on Accessories.")
 public void i_hover_on_accessories() {

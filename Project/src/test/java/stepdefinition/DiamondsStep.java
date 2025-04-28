@@ -8,7 +8,7 @@ import io.cucumber.java.en.When;
 import pages.SwarovskiDiamondsPage;
 
 public class DiamondsStep {
-    ExtentTest test = Hooks.reports.createTest("Diamond Page Test");
+    ExtentTest test = Hooks.reports.createTest("Diamond Page");
     SwarovskiDiamondsPage diamondsPage = new SwarovskiDiamondsPage(test);
 
     @Given("I hover on Diamonds.")

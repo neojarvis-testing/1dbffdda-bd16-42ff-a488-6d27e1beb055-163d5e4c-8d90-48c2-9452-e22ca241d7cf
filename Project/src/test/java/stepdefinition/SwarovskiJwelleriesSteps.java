@@ -10,7 +10,7 @@ import pages.SwarovskiJwelleriesPage;
 public class SwarovskiJwelleriesSteps {
 
 
-ExtentTest test= Hooks.reports.createTest("Test Swarovski jwelleries");
+ExtentTest test= Hooks.reports.createTest("Swarovski jwelleries");
 SwarovskiJwelleriesPage swarovskiJwelleriesPage= new SwarovskiJwelleriesPage(test);
 
 
