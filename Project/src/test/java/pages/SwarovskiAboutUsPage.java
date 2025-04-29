@@ -190,6 +190,7 @@ public class SwarovskiAboutUsPage {
             helper.switchWindow(SwarovskiAboutUsPageLocators.clickOnAlumniCommunity);
             test.log(Status.PASS,"Clicked on AlumniCommunity");
             LoggerHandler.logInfo("Clicked on AlumniCommunity");
+            Thread.sleep(1000);
         } catch (Exception e) {
             test.log(Status.FAIL,"Unable to Click on AlumniCommunity");
             LoggerHandler.logError("Unable to Click on AlumniCommunity");
