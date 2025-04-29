@@ -6,10 +6,9 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pages.FooterPage;
-import pages.SwarovskiAboutUsPage;
 
 public class Footer {
-    ExtentTest test=Hooks.reports.createTest("Footer");
+    ExtentTest test=Hooks.reports.createTest("Footer Section");
     FooterPage footer =new FooterPage(test);
     @Given("I scroll To Footer")
 public void i_scroll_to_footer() {

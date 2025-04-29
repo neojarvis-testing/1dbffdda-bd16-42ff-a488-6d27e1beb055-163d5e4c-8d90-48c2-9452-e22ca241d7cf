@@ -9,7 +9,7 @@ import pages.SwarovskiWatchesPage;
 
 public class SwarovskiWatchesSteps {
 
-ExtentTest test=Hooks.reports.createTest("Test Swarovski Watches");
+ExtentTest test=Hooks.reports.createTest("Swarovski Watches");
 SwarovskiWatchesPage swarovskiWatchesPage= new SwarovskiWatchesPage(test);
 
 @Given("I hover on watches.")

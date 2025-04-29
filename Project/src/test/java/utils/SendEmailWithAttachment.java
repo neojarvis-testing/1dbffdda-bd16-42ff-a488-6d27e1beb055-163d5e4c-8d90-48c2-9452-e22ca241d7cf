@@ -21,7 +21,7 @@ import jakarta.mail.internet.MimeMultipart;
 public class SendEmailWithAttachment {
 	        final static String toEmail="safiurrahaman6296@gmail.com";
 	        final static String fromEmail="treeltimind@gmail.com";
-	        final static String password="Ltimindtree@1234";
+	        final static String password="xqoxoubikhaafpna";
 	        final static String subject="Automation testing";
 	        final static String body="please find attchment";
 	        final static String projectPath=System.getProperty("user.dir");

@@ -6,7 +6,7 @@ public class SwarovskiAboutUsPageLocators {
     public static By clickOnAboutSwarovski=By.xpath("(//a[@href='/en-US/s-brand/'])[2]");
     public static By clickOnSustainability=By.xpath("(//a[@href='/en-US/s-sustainability/'])[2]");
     public static By clickOnJobsAndCareer=By.xpath("(//a[@href='/en-US/s-careers/'])[2]");
-    public static By clickOnAlumniCommunity=By.xpath("//a[@href='https://alumni.swarovski.com/alumni/anon/landing-page?_ics=1745572545554&irclickid=~4VOSXNFHxvCBCFxCABqyofgf~c569chdjipsujkgea71WNKFAuqh']");
+    public static By clickOnAlumniCommunity=By.xpath("(//a[@id='AlumniCommunityNavNodeEntryComponent'])[1]");
     public static By clickOnCorporategifts=By.xpath("(//a[@href='/en-US/s-corporate-gifts/'])[3]");
     public static By clickOnForProfessional=By.xpath("(//a[@href='/en-US/professionals/'])[2]");
     public static By clickOnSitemap=By.xpath("(//a[@href='/en-US/s-html-sitemap/'])[1]");

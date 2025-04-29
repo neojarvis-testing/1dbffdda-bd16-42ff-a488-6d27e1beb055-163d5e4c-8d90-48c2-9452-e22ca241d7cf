@@ -8,7 +8,7 @@ import io.cucumber.java.en.When;
 import pages.EarringsHomePage;
 
 public class EarringsPage {
-    ExtentTest test = Hooks.reports.createTest("Earings");
+    ExtentTest test = Hooks.reports.createTest("Search Earings");
     EarringsHomePage earringsHomePage = new EarringsHomePage(test);
 @Given("I verify the Logo.")
 public void i_verify_the_logo() {
